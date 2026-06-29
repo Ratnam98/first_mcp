@@ -1,0 +1,290 @@
+{
+  "categories": [
+    {
+      "name": "Housing",
+      "subcategories": [
+        "Rent",
+        "Mortgage",
+        "Property Tax",
+        "Home Insurance",
+        "Maintenance",
+        "Repairs",
+        "Furniture",
+        "Appliances",
+        "Home Supplies",
+        "HOA Fees"
+      ]
+    },
+    {
+      "name": "Utilities",
+      "subcategories": [
+        "Electricity",
+        "Water",
+        "Gas",
+        "Internet",
+        "Mobile Phone",
+        "Cable TV",
+        "Streaming Services",
+        "Waste Disposal",
+        "Sewage",
+        "Security System"
+      ]
+    },
+    {
+      "name": "Food",
+      "subcategories": [
+        "Groceries",
+        "Restaurants",
+        "Fast Food",
+        "Coffee",
+        "Snacks",
+        "Meal Delivery",
+        "Alcohol",
+        "Work Lunch",
+        "Bakery",
+        "Household Food"
+      ]
+    },
+    {
+      "name": "Transportation",
+      "subcategories": [
+        "Fuel",
+        "Public Transit",
+        "Taxi",
+        "Ride Share",
+        "Parking",
+        "Tolls",
+        "Vehicle Maintenance",
+        "Vehicle Repair",
+        "Vehicle Insurance",
+        "Vehicle Registration",
+        "Car Wash",
+        "Bicycle",
+        "Bike Maintenance"
+      ]
+    },
+    {
+      "name": "Health",
+      "subcategories": [
+        "Doctor",
+        "Dentist",
+        "Eye Care",
+        "Medicine",
+        "Pharmacy",
+        "Health Insurance",
+        "Therapy",
+        "Medical Tests",
+        "Hospital",
+        "Fitness",
+        "Gym",
+        "Wellness"
+      ]
+    },
+    {
+      "name": "Insurance",
+      "subcategories": [
+        "Life Insurance",
+        "Health Insurance",
+        "Vehicle Insurance",
+        "Home Insurance",
+        "Renters Insurance",
+        "Travel Insurance",
+        "Disability Insurance",
+        "Business Insurance"
+      ]
+    },
+    {
+      "name": "Debt",
+      "subcategories": [
+        "Credit Card Payment",
+        "Personal Loan",
+        "Student Loan",
+        "Vehicle Loan",
+        "Home Loan",
+        "Interest",
+        "Late Fees",
+        "Loan Processing Fees"
+      ]
+    },
+    {
+      "name": "Savings And Investments",
+      "subcategories": [
+        "Emergency Fund",
+        "Retirement",
+        "Stocks",
+        "Mutual Funds",
+        "Index Funds",
+        "Bonds",
+        "Fixed Deposit",
+        "Recurring Deposit",
+        "Crypto",
+        "Brokerage Fees",
+        "Investment Advisory Fees"
+      ]
+    },
+    {
+      "name": "Personal Care",
+      "subcategories": [
+        "Haircut",
+        "Salon",
+        "Skincare",
+        "Cosmetics",
+        "Toiletries",
+        "Laundry",
+        "Dry Cleaning",
+        "Spa",
+        "Massage",
+        "Personal Hygiene"
+      ]
+    },
+    {
+      "name": "Shopping",
+      "subcategories": [
+        "Clothing",
+        "Shoes",
+        "Accessories",
+        "Electronics",
+        "Books",
+        "Home Decor",
+        "Kitchenware",
+        "Tools",
+        "Subscriptions",
+        "Online Shopping"
+      ]
+    },
+    {
+      "name": "Entertainment",
+      "subcategories": [
+        "Movies",
+        "Concerts",
+        "Events",
+        "Games",
+        "Music",
+        "Sports",
+        "Hobbies",
+        "Museums",
+        "Clubs",
+        "Recreation",
+        "Streaming"
+      ]
+    },
+    {
+      "name": "Travel",
+      "subcategories": [
+        "Flights",
+        "Hotels",
+        "Vacation Rental",
+        "Train",
+        "Bus",
+        "Rental Car",
+        "Travel Food",
+        "Sightseeing",
+        "Visa",
+        "Passport",
+        "Travel Insurance",
+        "Luggage",
+        "Tours"
+      ]
+    },
+    {
+      "name": "Education",
+      "subcategories": [
+        "Tuition",
+        "Courses",
+        "Books",
+        "School Supplies",
+        "Exam Fees",
+        "Certifications",
+        "Workshops",
+        "Online Learning",
+        "Tutoring",
+        "Education Software"
+      ]
+    },
+    {
+      "name": "Family And Children",
+      "subcategories": [
+        "Childcare",
+        "School Fees",
+        "Kids Clothing",
+        "Kids Activities",
+        "Toys",
+        "Baby Supplies",
+        "Allowance",
+        "Family Support",
+        "Elder Care",
+        "Dependent Care"
+      ]
+    },
+    {
+      "name": "Gifts And Donations",
+      "subcategories": [
+        "Gifts",
+        "Charity",
+        "Religious Giving",
+        "Crowdfunding",
+        "Tips",
+        "Wedding Gifts",
+        "Birthday Gifts",
+        "Holiday Gifts",
+        "Memorial Gifts"
+      ]
+    },
+    {
+      "name": "Business And Work",
+      "subcategories": [
+        "Office Supplies",
+        "Software",
+        "Hardware",
+        "Professional Services",
+        "Business Travel",
+        "Client Meals",
+        "Coworking",
+        "Marketing",
+        "Training",
+        "Licenses",
+        "Bank Charges"
+      ]
+    },
+    {
+      "name": "Taxes And Fees",
+      "subcategories": [
+        "Income Tax",
+        "Property Tax",
+        "Sales Tax",
+        "Tax Preparation",
+        "Government Fees",
+        "Bank Fees",
+        "ATM Fees",
+        "Card Fees",
+        "Service Charges",
+        "Penalties"
+      ]
+    },
+    {
+      "name": "Pets",
+      "subcategories": [
+        "Pet Food",
+        "Vet",
+        "Pet Medicine",
+        "Grooming",
+        "Pet Insurance",
+        "Pet Supplies",
+        "Boarding",
+        "Training",
+        "Adoption Fees"
+      ]
+    },
+    {
+      "name": "Miscellaneous",
+      "subcategories": [
+        "Uncategorized",
+        "Cash Withdrawal",
+        "Lost Money",
+        "Unexpected Expense",
+        "Refund Adjustment",
+        "Other"
+      ]
+    }
+  ]
+}
