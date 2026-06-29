@@ -1,11 +1,14 @@
 from fastmcp import FastMCP
+import shutil
 import os
 import sqlite3
 import json
 
+APP_DIR = os.path.dirname(__file__)
 DB_PATH = os.getenv("EXPENSES_DB_PATH", os.path.join("/tmp", "expenses.db"))
+SEED_DB_PATH = os.path.join(APP_DIR, "expenses.db")
 
-CATEGORIES_PATH = os.path.join(os.path.dirname(__file__), "category.json")
+CATEGORIES_PATH = os.path.join(APP_DIR, "category.json")
 
 mcp= FastMCP(name="Expense Tracker")
 
@@ -14,6 +17,13 @@ def get_db_connection():
     db_dir = os.path.dirname(DB_PATH)
     if db_dir:
         os.makedirs(db_dir, exist_ok=True)
+
+    if (
+        not os.path.exists(DB_PATH)
+        and os.path.exists(SEED_DB_PATH)
+        and os.path.abspath(DB_PATH) != os.path.abspath(SEED_DB_PATH)
+    ):
+        shutil.copyfile(SEED_DB_PATH, DB_PATH)
 
     return sqlite3.connect(DB_PATH)
 
