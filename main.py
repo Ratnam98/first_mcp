@@ -3,16 +3,24 @@ import os
 import sqlite3
 import json
 
-DB_PATH = os.path.join(os.path.dirname(__file__), "expenses.db")
+DB_PATH = os.getenv("EXPENSES_DB_PATH", os.path.join("/tmp", "expenses.db"))
 
 CATEGORIES_PATH = os.path.join(os.path.dirname(__file__), "category.json")
 
 mcp= FastMCP(name="Expense Tracker")
 
+def get_db_connection():
+    """Open the SQLite database from a writable location."""
+    db_dir = os.path.dirname(DB_PATH)
+    if db_dir:
+        os.makedirs(db_dir, exist_ok=True)
+
+    return sqlite3.connect(DB_PATH)
+
 @mcp.tool
 def init_db():
     """Initialize the database and create the expenses table if it doesn't exist."""
-    conn = sqlite3.connect(DB_PATH)
+    conn = get_db_connection()
     cursor = conn.cursor()
     cursor.execute(
         """
@@ -32,7 +40,7 @@ def init_db():
 
 @mcp.tool
 def add_expense(date: str, amount: float, category: str, description: str, notes:str = None):
-    with sqlite3.connect(DB_PATH) as conn:
+    with get_db_connection() as conn:
         cursor = conn.cursor()
         cursor.execute(
             "INSERT INTO expenses (date, amount, category, description, notes) VALUES (?, ?, ?, ?, ?)",
@@ -62,7 +70,7 @@ def list_expenses(start_date: str | None = None, end_date: str | None = None):
 
     query += " ORDER BY date ASC, id ASC"
 
-    with sqlite3.connect(DB_PATH) as conn:
+    with get_db_connection() as conn:
         conn.row_factory = sqlite3.Row
         cursor = conn.cursor()
         cursor.execute(query, params)
@@ -90,7 +98,7 @@ def summarize(start_date: str | None = None, end_date: str | None = None):
 
     query += " GROUP BY category ORDER BY total_amount DESC"
 
-    with sqlite3.connect(DB_PATH) as conn:
+    with get_db_connection() as conn:
         conn.row_factory = sqlite3.Row
         cursor = conn.cursor()
         cursor.execute(query, params)
